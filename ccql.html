@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--<script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>千理の小窝</title>
+    <meta name="description" content="千理的个人主页，喜欢进行网页开发与游戏开发">
+    <meta name="keywords" content="个人主页,网页开发,游戏开发,前端技术">
+    <link rel="stylesheet" href="ccql.css">
+    <link rel="preload" href="loop.webp" as="image">
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3MtMJtzNucpa6HoD",ck:"3MtMJtzNucpa6HoD"})</script>
+</head>
+<body>
+<div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">正在加载中...</div>
+    </div>
+</div>
+    <div class="meteors-container"></div>
+    <div class="background"></div>
+
+    <audio id="audio-player" loop hidden>
+        <source src="Circulation_loop.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <div class="left-panel">
+            <div class="time-display horizontal">
+                <div class="time" id="current-time">10:44</div>
+                <div class="date" id="current-date">2024年05月28日</div>
+            </div>
+            
+            <div class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-pic-wrapper">
+                        <div class="profile-pic"></div>
+                    </div>
+                    <div class="profile-name-container">
+                        <div class="profile-name">千理</div>
+                        <div class="profile-title">一名正值高三的学生</div>
+                    </div>
+                </div>
+                <div class="profile-bio">
+                    网页开发爱好者，游戏开发爱好者。
+                    <p>热爱创造简洁优雅的数字体验，专注前沿技术探索</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="middle-panel">
+            <div class="title-block">
+                <h1 class="website-title">欢迎来到千理の小窝</h1>
+            </div>
+                <div class="sites-container">
+                        <h2 class="sites-title">旗下站点</h2>
+                        <div class="sites-grid">
+                        <a class="site-item" href="https://crcuqanli.top/" target="_blank">
+                            <div class="site-icon"><img src="icons/pen.svg" alt="博客" class="site-img"></div>
+                            <div class="site-name">千理博客</div>
+                        </a>
+                        <a class="site-item" href="https://crcuqanli.top/brief/brief.html" target="_blank">
+                            <div class="site-icon"><img src="icons/search.svg" alt="搜索" class="site-img"></div>
+                            <div class="site-name">极简起始页</div>
+                        </a>
+                        <a class="site-item" href="http://qlhtrj.natapp1.cc/" target="_blank">
+                            <div class="site-icon"><img src="icons/gamepad.svg" alt="游戏" class="site-img"></div>
+                            <div class="site-name">千理胡桃日记</div>
+                        </a>
+                        <a class="site-item" href="https://crcuqanli.top/ccql/ccql.html" target="_blank">
+                            <div class="site-icon"><img src="icons/user.svg" alt="个人主义" class="site-img"></div>
+                            <div class="site-name">千理小窝</div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="music-player">
+                <div class="album-art-container">
+                    <div class="album-art" id="album-art">
+                        <img src="loop.webp" alt="专辑封面">
+                    </div>
+                </div>
+                
+                <div class="song-info">
+                    <div class="song-title">Circulation(loop)</div>
+                    <div class="artist">由[乌鸦Producer]提供</div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="audio-current-time">00:00</span>
+                        <span id="duration">01:00</span>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button class="control-btn play-pause" id="play-pause" aria-label="播放/暂停">
+                        <img id="play-pause-icon" src="icons/play.svg" width="28" height="28" alt="播放按钮">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="ccql.js"></script>
+</body>
+</html>
